@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brote · Café y matcha en Palermo</title>
+  <meta name="description" content="Café de especialidad tostado en casa y matcha ceremonial en la calle Gorriti, Palermo. Abrimos todos los días desde las 7:30.">
+  <meta name="theme-color" content="#B6CBA5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brote · Café y matcha en Palermo">
+  <meta property="og:description" content="Café tostado en casa y matcha ceremonial en Gorriti, Palermo.">
+  <meta property="og:image" content="assets/img/photo-m189498721-1280.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <div class="progress" aria-hidden="true" data-progress></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" data-nav>
+    <div class="nav__inner wrap">
+      <a class="brand" href="#top" aria-label="Brote, volver al inicio">
+        <img src="assets/logo.svg" alt="" width="36" height="36">
+        <span>Brote</span>
+      </a>
+      <nav class="nav__links" id="menu" aria-label="Principal">
+        <a href="#carta">Carta</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#granos">Granos</a>
+        <a href="#visita">Visitanos</a>
+      </nav>
+      <a class="btn btn--dark nav__cta" href="#visita">Cómo llegar</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" data-menu-toggle>
+        <span class="sr-only">Abrir menú</span>
+        <span class="nav__burger" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero grain" id="top">
+      <div class="hero__stage">
+        <h1 class="hero__title">
+          <span class="hero__line" data-split>Café</span>
+          <span class="hero__line hero__line--end" data-split>&amp; matcha</span>
+        </h1>
+
+        <figure class="hero__media" data-hero-media>
+          <svg class="hero__ring" viewBox="0 0 200 200" aria-hidden="true" data-ring>
+            <circle cx="100" cy="100" r="96" fill="none" stroke="#fff" stroke-width="2.4"/>
+            <circle cx="100" cy="4" r="5" fill="#1E3D1B"/>
+            <circle cx="196" cy="100" r="3.5" fill="#fff"/>
+            <circle cx="4" cy="100" r="3.5" fill="#fff"/>
+            <g transform="translate(100 196) rotate(20)"><ellipse rx="6" ry="8" fill="#1E3D1B"/><path d="M1-7c-4 3 2 7-2 14" fill="none" stroke="#B6CBA5" stroke-width="1.4"/></g>
+          </svg>
+          <div class="hero__photo" data-hero-photo>
+            <img src="assets/img/photo-f176273721-960.webp"
+               srcset="assets/img/photo-f176273721-500.webp 500w, assets/img/photo-f176273721-960.webp 960w, assets/img/photo-f176273721.webp 1280w"
+               sizes="(max-width: 767px) 60vw, 22vw" width="960" height="1440"
+               alt="Matcha latte frío en un vaso alto de vidrio" fetchpriority="high">
+          </div>
+          <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
+            <defs><path id="badge-path" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs>
+            <circle cx="60" cy="60" r="60" fill="#1E3D1B"/>
+            <g class="badge__text" data-badge>
+              <text font-family="Barlow Condensed, sans-serif" font-size="13.4" font-weight="600" letter-spacing="1.8" fill="#F5F0E6"><textPath href="#badge-path">CAFÉ DE ESPECIALIDAD ✺ MATCHA DE UJI ✺</textPath></text>
+            </g>
+            <g transform="translate(60 62) rotate(-20)"><ellipse rx="11" ry="14" fill="#90B96D"/><path d="M2-12c-7 5 3 12-3 24" fill="none" stroke="#1E3D1B" stroke-width="2" stroke-linecap="round"/></g>
+          </svg>
+        </figure>
+      </div>
+
+      <div class="hero__foot">
+        <ul class="hero__stats" aria-label="Brote en números">
+          <li><strong><span data-count="7">7</span> días</strong> de reposo después de cada tueste</li>
+          <li><strong><span data-count="18">18</span> g</strong> de café en cada espresso doble</li>
+          <li><strong><span data-count="4">4</span> orígenes</strong> en barra cada semana</li>
+        </ul>
+        <div class="hero__aside" data-hero-aside>
+          <p>Tostamos el café en casa y batimos matcha de Uji a mano, en una esquina de Gorriti, Palermo. Abrimos todos los días desde las 7:30.</p>
+          <a class="btn btn--dark" href="#carta">Ver la carta <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true" data-marquee>
+      <div class="marquee__track">
+        <span>Tostado en casa</span><i>✺</i><span>Molido por taza</span><i>✺</i><span>Matcha de Uji</span><i>✺</i><span>Leche vegetal sin cargo</span><i>✺</i>
+      </div>
+    </div>
+
+    <!-- ============ MANIFIESTO ============ -->
+    <section class="manifesto section" id="nosotros">
+      <div class="wrap manifesto__grid">
+        <div class="manifesto__text">
+          <p class="eyebrow">Por qué Brote</p>
+          <p class="manifesto__big" data-words>Abrimos Brote para tomar el café que nos gustaba y no encontrábamos: tostado la semana pasada, molido en el momento y servido sin apuro. Después llegó el matcha, y se quedó.</p>
+        </div>
+        <div class="manifesto__photos">
+          <figure class="photo photo--tall" data-clip data-speed="-0.12">
+            <img src="assets/img/photo-m201752739-960.webp" srcset="assets/img/photo-m201752739-500.webp 500w, assets/img/photo-m201752739-960.webp 960w" sizes="(max-width: 767px) 45vw, 20vw" width="960" height="1433" alt="Manos de barista texturizando leche en una jarra roja junto a la máquina" loading="lazy">
+          </figure>
+          <figure class="photo photo--tall" data-clip data-speed="0.12">
+            <img src="assets/img/photo-m61714648-960.webp" srcset="assets/img/photo-m61714648-500.webp 500w, assets/img/photo-m61714648-960.webp 960w" sizes="(max-width: 767px) 45vw, 20vw" width="960" height="1433" alt="Espresso servido desde una jarrita en una taza blanca sobre una barra de madera" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIFERENCIAS ============ -->
+    <section class="section diff grain" id="diferencias">
+      <div class="wrap">
+        <div class="head-row">
+          <h2 class="display-h2" data-chars>Más café.<br>Menos apuro.</h2>
+          <p data-reveal>Cuatro decisiones que tomamos el primer día y no pensamos cambiar.</p>
+        </div>
+        <div class="cards">
+          <article class="card" data-card>
+            <figure class="card__img"><img src="assets/img/photo-m147143963-960.webp" srcset="assets/img/photo-m147143963-500.webp 500w, assets/img/photo-m147143963-960.webp 960w" sizes="(max-width: 767px) 90vw, 25vw" width="960" height="676" alt="Granos recién tostados cayendo del tambor a la bandeja de enfriado" loading="lazy"></figure>
+            <h3>Tostamos los martes</h3>
+            <p>Lotes de 5 kg en una tostadora chica, al fondo del local. El grano descansa una semana antes de llegar a la taza.</p>
+          </article>
+          <article class="card" data-card>
+            <figure class="card__img"><img src="assets/img/photo-m187311853-1200.webp" sizes="(max-width: 767px) 90vw, 25vw" width="1200" height="800" alt="Barista compactando café molido en el portafiltro" loading="lazy"></figure>
+            <h3>Molemos por taza</h3>
+            <p>Nada de café molido esperando en una tolva. Cada espresso se pesa y se muele justo antes de pasar.</p>
+          </article>
+          <article class="card" data-card>
+            <figure class="card__img"><img src="assets/img/photo-f112725633-960.webp" srcset="assets/img/photo-f112725633-500.webp 500w, assets/img/photo-f112725633-960.webp 960w" sizes="(max-width: 767px) 90vw, 25vw" width="960" height="640" alt="Matcha latte con un corazón de espuma, visto desde arriba sobre madera oscura" loading="lazy"></figure>
+            <h3>Matcha ceremonial</h3>
+            <p>Viene de Uji, Japón, y lo batimos con chasen como corresponde. Sin azúcar agregada, salvo que la pidas.</p>
+          </article>
+          <article class="card" data-card>
+            <figure class="card__img"><img src="assets/img/photo-m61713362-960.webp" srcset="assets/img/photo-m61713362-500.webp 500w, assets/img/photo-m61713362-960.webp 960w" sizes="(max-width: 767px) 90vw, 25vw" width="960" height="640" alt="Leche vertida sobre un latte en una taza blanca sostenida con una mano" loading="lazy"></figure>
+            <h3>Leche vegetal sin cargo</h3>
+            <p>Avena, almendras o coco, el mismo precio que la de vaca. Nos parece lo justo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARTA ============ -->
+    <section class="section menu" id="carta">
+      <div class="wrap menu__grid">
+        <div class="menu__body">
+          <h2 class="display-h2" data-chars>La carta</h2>
+          <div class="tabs" role="tablist" aria-label="Categorías de la carta">
+            <button class="tab" role="tab" id="tab-cafe" aria-controls="panel-cafe" aria-selected="true" data-tab="cafe">Café</button>
+            <button class="tab" role="tab" id="tab-matcha" aria-controls="panel-matcha" aria-selected="false" tabindex="-1" data-tab="matcha">Matcha</button>
+            <button class="tab" role="tab" id="tab-comer" aria-controls="panel-comer" aria-selected="false" tabindex="-1" data-tab="comer">Para acompañar</button>
+          </div>
+
+          <ul class="rows" role="tabpanel" id="panel-cafe" aria-labelledby="tab-cafe" data-panel="cafe">
+            <li><span>Espresso <em>Doble, 18 g, del origen de la semana</em></span><b>$2.800</b></li>
+            <li><span>Cortado <em>Espresso con un toque de leche</em></span><b>$3.200</b></li>
+            <li><span>Flat white <em>Doble con leche sedosa, 180 ml</em></span><b>$4.200</b></li>
+            <li><span>Filtrado V60 <em>Preparado en el momento, 300 ml</em></span><b>$4.500</b></li>
+            <li><span>Cold brew <em>Infusión en frío de 18 horas</em></span><b>$4.800</b></li>
+          </ul>
+          <ul class="rows" role="tabpanel" id="panel-matcha" aria-labelledby="tab-matcha" data-panel="matcha" hidden>
+            <li><span>Matcha usucha <em>Batido con agua, como en Japón</em></span><b>$4.800</b></li>
+            <li><span>Matcha latte <em>Con la leche que elijas</em></span><b>$5.200</b></li>
+            <li><span>Iced matcha <em>Sobre hielo, con leche de avena</em></span><b>$5.500</b></li>
+            <li><span>Matcha tónica <em>Agua tónica, hielo y piel de limón</em></span><b>$5.600</b></li>
+            <li><span>Dirty matcha <em>Matcha latte con un shot de espresso</em></span><b>$5.900</b></li>
+          </ul>
+          <ul class="rows" role="tabpanel" id="panel-comer" aria-labelledby="tab-comer" data-panel="comer" hidden>
+            <li><span>Medialuna de manteca <em>Horneada cada mañana</em></span><b>$1.600</b></li>
+            <li><span>Cookie de chocolate y sal <em>Grande, para compartir o no</em></span><b>$2.900</b></li>
+            <li><span>Budín de limón y amapola <em>La porción</em></span><b>$3.200</b></li>
+            <li><span>Banana bread <em>Con manteca de maní tibia</em></span><b>$3.800</b></li>
+            <li><span>Tostado de masa madre <em>Jamón cocido y queso de campo</em></span><b>$6.500</b></li>
+          </ul>
+        </div>
+
+        <div class="menu__media" aria-hidden="true">
+          <img class="is-active" data-media="cafe" src="assets/img/photo-m28989985-1200.webp" sizes="(max-width: 767px) 90vw, 45vw" width="1200" height="857" alt="">
+          <img data-media="matcha" src="assets/img/photo-f127618604-960.webp" srcset="assets/img/photo-f127618604-500.webp 500w, assets/img/photo-f127618604-960.webp 960w" sizes="(max-width: 767px) 90vw, 45vw" width="960" height="1280" alt="">
+          <img data-media="comer" src="assets/img/photo-f100766962-960.webp" srcset="assets/img/photo-f100766962-500.webp 500w, assets/img/photo-f100766962-960.webp 960w, assets/img/photo-f100766962.webp 1280w" sizes="(max-width: 767px) 90vw, 45vw" width="960" height="720" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO (scroll horizontal) ============ -->
+    <section class="process" id="proceso" data-process>
+      <div class="process__track" data-process-track>
+        <div class="process__intro">
+          <h2 class="display-h2" data-chars>Del grano<br>a la taza</h2>
+          <p>Cinco pasos, todos dentro del local. Seguí deslizando.</p>
+        </div>
+        <article class="step">
+          <figure><img src="assets/img/photo-m62054123-960.webp" srcset="assets/img/photo-m62054123-500.webp 500w, assets/img/photo-m62054123-960.webp 960w" sizes="(max-width: 899px) 85vw, 34vw" width="960" height="640" alt="Una mano separando granos de café verde en una canasta"></figure>
+          <span class="step__n">01</span>
+          <h3>Elegimos</h3>
+          <p>Compramos café verde a productores chicos de Etiopía, Colombia y Brasil, y lo separamos a mano.</p>
+        </article>
+        <article class="step">
+          <figure><img src="assets/img/photo-m147143894-1200.webp" sizes="(max-width: 899px) 85vw, 34vw" width="1200" height="800" alt="Sonda de muestreo saliendo del tambor de la tostadora con granos a medio tostar"></figure>
+          <span class="step__n">02</span>
+          <h3>Tostamos</h3>
+          <p>Cada martes. Sacamos muestras del tambor cada minuto para cortar el tueste en el punto justo.</p>
+        </article>
+        <article class="step">
+          <figure><img src="assets/img/photo-m61712989-960.webp" srcset="assets/img/photo-m61712989-500.webp 500w, assets/img/photo-m61712989-960.webp 960w, assets/img/photo-m61712989.webp 1280w" sizes="(max-width: 899px) 85vw, 34vw" width="960" height="640" alt="Granos tostados girando en la bandeja de enfriado"></figure>
+          <span class="step__n">03</span>
+          <h3>Esperamos</h3>
+          <p>Siete días de reposo para que el grano suelte el gas. Apurarlo es lo único que no hacemos.</p>
+        </article>
+        <article class="step">
+          <figure><img src="assets/img/photo-m61716670-960.webp" srcset="assets/img/photo-m61716670-500.webp 500w, assets/img/photo-m61716670-960.webp 960w" sizes="(max-width: 899px) 85vw, 34vw" width="960" height="640" alt="Dos chorros de espresso cayendo en una taza blanca"></figure>
+          <span class="step__n">04</span>
+          <h3>Extraemos</h3>
+          <p>18 gramos, 36 de bebida, entre 27 y 30 segundos. Si no sale así, lo tiramos y empezamos de nuevo.</p>
+        </article>
+        <article class="step">
+          <figure><img src="assets/img/photo-m189498721-960.webp" srcset="assets/img/photo-m189498721-500.webp 500w, assets/img/photo-m189498721-960.webp 960w" sizes="(max-width: 899px) 85vw, 34vw" width="960" height="640" alt="Bandeja con cuatro cafés llevada a lo largo de una barra de madera"></figure>
+          <span class="step__n">05</span>
+          <h3>Servimos</h3>
+          <p>A la mesa, con un vaso de agua. Si querés saber qué estás tomando, preguntá: nos encanta contarlo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ GRANOS ============ -->
+    <section class="section beans grain" id="granos">
+      <div class="wrap">
+        <div class="head-row">
+          <h2 class="display-h2" data-chars>Llevate<br>el grano</h2>
+          <p data-reveal>Bolsas de 250 g, tostadas esta semana. Te lo molemos para tu cafetera o te lo llevás entero.</p>
+        </div>
+        <div class="beans__grid">
+          <article class="bean" style="--c: #F2C9B5" data-card>
+            <span class="bean__icon" aria-hidden="true" data-bean-icon></span>
+            <p class="bean__origin">Guji · Lavado</p>
+            <h3>Etiopía</h3>
+            <p class="bean__notes">Jazmín, durazno y té negro</p>
+            <p class="bean__price">$14.500</p>
+          </article>
+          <article class="bean" style="--c: #EED78C" data-card>
+            <span class="bean__icon" aria-hidden="true" data-bean-icon></span>
+            <p class="bean__origin">Huila · Lavado</p>
+            <h3>Colombia</h3>
+            <p class="bean__notes">Panela, naranja y cacao</p>
+            <p class="bean__price">$13.000</p>
+          </article>
+          <article class="bean" style="--c: #D8B48E" data-card>
+            <span class="bean__icon" aria-hidden="true" data-bean-icon></span>
+            <p class="bean__origin">Cerrado · Natural</p>
+            <h3>Brasil</h3>
+            <p class="bean__notes">Avellana, chocolate con leche</p>
+            <p class="bean__price">$12.000</p>
+          </article>
+          <article class="bean" style="--c: #E8EFE4" data-card>
+            <span class="bean__icon" aria-hidden="true" data-bean-icon></span>
+            <p class="bean__origin">Para espresso</p>
+            <h3>Blend Brote</h3>
+            <p class="bean__notes">Colombia y Brasil, dulce y redondo</p>
+            <p class="bean__price">$12.500</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISITA ============ -->
+    <section class="section visit" id="visita">
+      <div class="wrap visit__grid">
+        <div>
+          <h2 class="eyebrow">Visitanos</h2>
+          <p class="visit__street">
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Gorriti%2C%20Palermo%2C%20Buenos%20Aires" target="_blank" rel="noopener" data-chars>Gorriti,<br>Palermo</a>
+          </p>
+          <div class="visit__info" data-reveal>
+            <h3>Horarios</h3>
+            <dl class="hours">
+              <div><dt>Lunes a viernes</dt><dd>7:30 – 19:00</dd></div>
+              <div><dt>Sábados</dt><dd>9:00 – 20:00</dd></div>
+              <div><dt>Domingos</dt><dd>9:00 – 18:00</dd></div>
+            </dl>
+          </div>
+        </div>
+        <figure class="photo visit__photo" data-clip>
+          <img src="assets/img/photo-m61715560-960.webp" srcset="assets/img/photo-m61715560-500.webp 500w, assets/img/photo-m61715560-960.webp 960w, assets/img/photo-m61715560.webp 1280w" sizes="(max-width: 767px) 90vw, 50vw" width="1280" height="848" alt="Café negro en una mesa de listones en la vereda" loading="lazy">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contacto">
+    <div class="marquee marquee--light" aria-hidden="true" data-marquee data-reverse>
+      <div class="marquee__track">
+        <span>Te esperamos</span><i>✺</i><span>Gorriti, Palermo</span><i>✺</i><span>Desde las 7:30</span><i>✺</i>
+      </div>
+    </div>
+    <div class="wrap footer__inner">
+      <div class="footer__cta">
+        <h2 class="display-h2" data-chars>Te guardamos<br>una mesa al sol</h2>
+        <a class="btn btn--light" href="https://www.google.com/maps/search/?api=1&amp;query=Gorriti%2C%20Palermo%2C%20Buenos%20Aires" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="footer__word" aria-hidden="true" data-footer-word>Brote</p>
+      <div class="footer__bottom">
+        <nav aria-label="Pie de página">
+          <a href="#carta">Carta</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#granos">Granos</a>
+          <a href="#visita">Visitanos</a>
+        </nav>
+        <p>© 2026 Brote Café · <a href="creditos.html">Créditos de las fotos</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
